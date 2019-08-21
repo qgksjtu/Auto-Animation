@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<view class='UCenter-bg'>
+  <view class='text-xl'>GKC4A-自主创意项目
+    <text class='text-df'>v1.0</text>
+  </view>
+  <view class='margin-top-sm'>
+    <text>指导教师：</text>
+    <text> 宋利
+    </text>
+    <text>小组组员：
+    </text>
+    <text> 乔光凯 戴景蔚 刘子阳 唐安妮 唐荣俊 黄超然 曾伟力 张皓然</text>
+  </view>
+</view>

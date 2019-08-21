@@ -1,0 +1,55 @@
+<!-- 滚动页面 -->
+<scroll-view scroll-y class="scrollPage">
+
+  <!-- 视频预览和获取 -->
+  <view class="container">
+    <video src="{{src}}"></video>
+  </view>
+  <view class="container_button">
+    <button class="cu-btn bg-green shadow" bindtap="bindGetVideoTap">获取视频</button>
+  </view>
+
+  <!-- 单选模型选择 -->
+  <view class="cu-bar bg-white margin-top">
+    <view class='action'>
+      <text class='icon-title text-blue'></text>规格
+    </view>
+    <view class='parameter-wrap'>
+      <block wx:for="{{parameter}}" wx:key="parameter">
+        <text class='parameter-info text-over {{item.checked?"checked_parameter":""}}' data-id='{{item.id}}' bindtap='parameterTap'>{{item.name}}</text>
+      </block>
+    </view>
+  </view>
+
+  <!-- 视频上传（带缓冲等待） -->
+  <view class="cu-bar bg-white margin-top">
+    <view class='action'>
+      <text class='icon-title text-blue'></text>上传视频
+    </view>
+    <view class='action'>
+      <button class='cu-btn bg-green shadow' bindtap='bindUploadVideoTap'>
+        盯
+      </button>
+    </view>
+  </view>
+  <view class='cu-load load-modal' wx:if="{{UploadModal}}">
+    <image src='/image/zhezhongshi.png' class='png' mode='aspectFit'></image>
+    <view class='gray-text'>上传处理中...</view>
+  </view>
+
+  <!-- 视频下载（带缓冲等待） -->
+  <view class="cu-bar bg-white margin-top">
+    <view class='action'>
+      <text class='icon-title text-blue'></text>下载视频
+    </view>
+    <view class='action'>
+      <button class='cu-btn bg-green shadow' bindtap='bindDownloadVideoTap'>
+        盯again
+      </button>
+    </view>
+  </view>
+  <view class='cu-load load-modal' wx:if="{{DownloadModal}}">
+    <image src='/image/xiazai.png' class='png' mode='aspectFit'></image>
+    <view class='gray-text'>下载中...</view>
+  </view>
+</scroll-view>

@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "GKC4A",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#666666",
+    "selectedColor":"#f10b2e",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "创作",
+        "iconPath":"./image/zoule.png",
+        "selectedIconPath":"./image/laile.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "关于",
+        "iconPath": "./image/zoule.png",
+        "selectedIconPath": "./image/laile.png"
+      }
+    ]
+  }
+}
